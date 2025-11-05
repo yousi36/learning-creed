@@ -20,7 +20,7 @@ export default function Navbar() {
 
   return (
     <AppBar
-      position="static"
+      position="fixed"
       sx={{
         backgroundColor: 'black',
         borderRadius: '9999px',
@@ -28,6 +28,8 @@ export default function Navbar() {
         mx: 'auto',
         mt: 2,
         px: 2,
+        py:-1,
+        mr:62,
         boxShadow: 3,
       }}
     >
