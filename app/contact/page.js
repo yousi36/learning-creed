@@ -61,7 +61,7 @@ export default function ContactPage() {
                     sx={{ height: "100%" }}
                 >
                     {/* Left Column: Text Section */}
-                    <Grid item xs={12} md={6} sx={{ width: "50%", border: "1px solid black", ml: -6, height: "100%" }}>
+                    <Grid item xs={12} md={6} sx={{ width: "50%", ml: -6, height: "100%" }}>
                         <Box>
                             <Typography
                                 variant="h3"
@@ -85,7 +85,7 @@ export default function ContactPage() {
                     </Grid>
 
                     {/* Right Column: Form Section */}
-                    <Grid item xs={12} md={6} sx={{ border: "1px solid red", width: "50%" }}>
+                    <Grid item xs={12} md={6} sx={{  width: "50%" }}>
                         <Paper
                             elevation={1}
                             sx={{

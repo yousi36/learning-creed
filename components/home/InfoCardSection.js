@@ -36,9 +36,10 @@ export default function InfoCardSection({
             horizontalSpacing={1}
             ml={-20}
             flexDirection={imageFirst?"row":"row-reverse"}
+          
           >
             {/* Image Card */}
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={6} >
               <Paper
                 elevation={0}
                 sx={{
@@ -52,7 +53,7 @@ export default function InfoCardSection({
                 <Image
                   src={imageSrc}
                   alt={title}
-                  width={500}
+                  width={2200}
                   height={400}
                   style={{
                     width: "100%",
@@ -65,7 +66,7 @@ export default function InfoCardSection({
             </Grid>
 
             {/* Text Card */}
-        <Grid item xs={12} md={6} ml={10} mr={-10} width={500} >
+        <Grid item xs={12} md={6} ml={10} mr={-10} width={500} sx={{mr:imageFirst?"":'2px'}} >
               <Box>
                 <Typography
                   variant="h3"

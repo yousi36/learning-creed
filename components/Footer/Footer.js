@@ -30,7 +30,6 @@ export default function Footer() {
         bgcolor: "background.paper",
         color: "text.primary",
         mt: 6,
-        borderTop: "1px solid #e0e0e0",
         py: 4,
       }}
     >

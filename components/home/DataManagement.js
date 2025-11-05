@@ -7,11 +7,14 @@ export default function DataManagementSection() {
   return (
     <Box
       component="section"
+      ml={2}
+      mr={2}
       sx={{
         bgcolor: "#042A2B",
         color: "white",
         py: { xs: 8, md: 12 },
         borderRadius: "40px",
+        height:"130vh",
       }}
     >
       <Container>
@@ -169,8 +172,8 @@ export default function DataManagementSection() {
                 overflow: "hidden",
                 background: "linear-gradient(145deg, #1E4E4A 0%, #3A7D7C 100%)",
                 display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
+                // alignItems: "center",
+                // justifyContent: "center",
               }}
             >
               <Image
