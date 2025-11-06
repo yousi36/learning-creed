@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Box, Typography, Button } from "@mui/material";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 
 const LearningJourneySection = ({ imageSrc }) => {
   return (
@@ -67,7 +67,7 @@ const LearningJourneySection = ({ imageSrc }) => {
 
           <Button
             variant="contained"
-            endIcon={<ArrowForwardIcon />}
+            endIcon={<ArrowCircleRightIcon />}
             sx={{
               backgroundColor: "#002B29",
               borderRadius: "50px",

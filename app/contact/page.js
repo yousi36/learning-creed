@@ -49,7 +49,7 @@ export default function ContactPage() {
                 display: "flex",
                 alignItems: "center",
                 mt: -8,
-                mb: -40
+                mb: -20
             }}
         >
             <Box sx={{ maxWidth: 1200, mx: "auto", px: 2, width: "100%" }}>
@@ -296,3 +296,5 @@ export default function ContactPage() {
         </Box>
     );
 }
+
+

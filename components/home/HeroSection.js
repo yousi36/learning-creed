@@ -2,7 +2,7 @@
 import { Box, Container, Typography, Button } from "@mui/material";
 import Image from "next/image";
 import NextLink from "next/link";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 
 export default function HeroSection() {
   return (
@@ -98,7 +98,7 @@ export default function HeroSection() {
             size="large"
             component={NextLink}
             href="/login"
-            endIcon={<ArrowForwardIcon />}
+            endIcon={<ArrowCircleRightIcon />}
             sx={{
               backgroundColor: "black",
               color: "white",
