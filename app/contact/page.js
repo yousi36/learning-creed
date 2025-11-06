@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 import {
     Box,
@@ -9,6 +8,8 @@ import {
     Button,
     Paper,
 } from "@mui/material";
+import Link from "next/link";
+import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 
 export default function ContactPage() {
     const [formData, setFormData] = useState({
@@ -85,7 +86,7 @@ export default function ContactPage() {
                     </Grid>
 
                     {/* Right Column: Form Section */}
-                    <Grid item xs={12} md={6} sx={{  width: "50%" }}>
+                    <Grid item xs={12} md={6} sx={{ width: "50%" }}>
                         <Paper
                             elevation={1}
                             sx={{
@@ -97,8 +98,8 @@ export default function ContactPage() {
                             <form onSubmit={handleSubmit} noValidate>
                                 <Grid container spacing={2}>
 
-                                    <Grid item xs={12} sm={6}>
-                                       <Typography
+                                    <Grid item xs={12} sm={6} >
+                                        <Typography
                                             component="label"
                                             sx={{
                                                 fontWeight: 500,
@@ -112,7 +113,7 @@ export default function ContactPage() {
                                                 sx={{
                                                     color: 'red',
                                                     fontWeight: 'bold',
-                                                    ml: 0.5, 
+                                                    ml: 0.5,
                                                 }}
                                             >
                                                 *
@@ -138,8 +139,8 @@ export default function ContactPage() {
                                             }}
                                         />
                                     </Grid>
-                                    <Grid item xs={12} sm={6}>
-                                       <Typography
+                                    <Grid >
+                                        <Typography
                                             component="label"
                                             sx={{
                                                 fontWeight: 500,
@@ -153,7 +154,7 @@ export default function ContactPage() {
                                                 sx={{
                                                     color: 'red',
                                                     fontWeight: 'bold',
-                                                    ml: 0.5, 
+                                                    ml: 0.5,
                                                 }}
                                             >
                                                 *
@@ -180,7 +181,7 @@ export default function ContactPage() {
                                             }}
                                         />
                                     </Grid>
-                                    <Grid item xs={12} md={12} >
+                                    <Grid size={{ xs: 12 }}>
                                         <Typography
                                             component="label"
                                             sx={{
@@ -195,13 +196,14 @@ export default function ContactPage() {
                                                 sx={{
                                                     color: 'red',
                                                     fontWeight: 'bold',
-                                                    ml: 0.5, 
+                                                    ml: 0.5,
                                                 }}
                                             >
                                                 *
                                             </Typography>
                                         </Typography>
                                         <TextField
+
                                             placeholder="Enter your email address"
                                             type="email"
                                             value={formData.email}
@@ -220,11 +222,10 @@ export default function ContactPage() {
                                                     borderColor: "#ddd",
                                                 },
                                                 width: "100%",
-                                                border: "1px solid red"
                                             }}
                                         />
                                     </Grid>
-                                    <Grid item xs={12}>
+                                    <Grid size={{ xs: 12 }}>
                                         <Typography
                                             component="label"
                                             sx={{
@@ -239,7 +240,7 @@ export default function ContactPage() {
                                                 sx={{
                                                     color: 'red',
                                                     fontWeight: 'bold',
-                                                    ml: 0.5, 
+                                                    ml: 0.5,
                                                 }}
                                             >
                                                 *
@@ -268,8 +269,8 @@ export default function ContactPage() {
                                             }}
                                         />
                                     </Grid>
-                                    <Grid item xs={12} sx={{ textAlign: "right", mt: 1 }}>
-                                        <Button
+                                    <Grid size={{ xs: 12 }} sx={{ textAlign: "right", mt: 1 }}>
+                                        {/* <Button
                                             type="submit"
                                             variant="contained"
                                             sx={{
@@ -285,6 +286,29 @@ export default function ContactPage() {
                                             }}
                                         >
                                             Send Message →
+                                        </Button> */}
+                                        <Button
+                                            variant="contained"
+                                            size="large"
+                                            component={Link}
+                                            href="/"
+                                            endIcon={<ArrowCircleRightIcon />}
+                                            sx={{
+                                                backgroundColor: "black",
+                                                color: "white",
+                                                textTransform: "none",
+                                                borderRadius: "9999px",
+                                                px: 3,
+                                                py: 1.5,
+                                                fontWeight: 600,
+                                                fontSize: "1rem",
+                                                transition: "background-color 0.3s ease",
+                                                "&:hover": {
+                                                    backgroundColor: "#1a1a1a", // Slightly lighter black for smooth fade effect
+                                                },
+                                            }}
+                                        >
+                                            Get started
                                         </Button>
                                     </Grid>
                                 </Grid>

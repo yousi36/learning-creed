@@ -3,6 +3,7 @@ import { usePathname } from 'next/navigation';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer/Footer';
 
+
 const metadata = {
   title: 'My Next.js App',
   description: 'Example with MUI Navbar outside app folder',

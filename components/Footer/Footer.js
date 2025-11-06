@@ -38,7 +38,7 @@ export default function Footer() {
           {/* Logo and Description */}
           <Grid item xs={12} sm={6} md={4}>
             <Box display="flex" alignItems="center" gap={1} mb={2}>
-              <Image src="/logo.png" alt="Learning Creed Logo" width={32} height={32} />
+              <Image src="/logo.svg" alt="Learning Creed Logo" width={32} height={32} />
               <Typography variant="h6" fontWeight="bold">
                 LearningCreed
               </Typography>

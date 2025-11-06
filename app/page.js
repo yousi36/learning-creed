@@ -3,6 +3,7 @@ import WhyChooseUsSection from "../components/home/chooseUs";
 import DataManagementSection from "../components/home/DataManagement";
 import InfoCardSection from "../components/home/InfoCardSection";
 import LearningJourneySection from "../components/LearningJourneySection"
+import HelpSection from "../components/HelpSection";
 export default function Home() {
     const contentData = [
         {
@@ -29,7 +30,9 @@ export default function Home() {
             <DataManagementSection></DataManagementSection>
             {contentData.map(
                 (item)=> {
-                return ( <InfoCardSection
+                return ( 
+                        <InfoCardSection
+                        key={item.id}
                         title={item.title}
                         description={item.description}
                         imageSrc={item.image}
@@ -37,6 +40,8 @@ export default function Home() {
                     />);
                 }
             )}
+   
+            <HelpSection></HelpSection>
              <LearningJourneySection imageSrc={"/homelearnsection.webp"} ></LearningJourneySection>
         </>
     )

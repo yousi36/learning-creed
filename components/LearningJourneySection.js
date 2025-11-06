@@ -1,5 +1,6 @@
 import React from "react";
 import { Grid, Box, Typography, Button } from "@mui/material";
+import Link from "next/link";
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 
 const LearningJourneySection = ({ imageSrc }) => {
@@ -8,8 +9,9 @@ const LearningJourneySection = ({ imageSrc }) => {
       sx={{
         width: "100%",
         height:"80vh",
-        py: { xs: 6, md: 10 },
-        px: { xs: 2, md: 8 },
+        py: { xs: 12, md: 10 },
+        px: { xs: 12, md: 8 },
+        mb:{xs:55,md:4},
         backgroundColor: "#fff",
       }}
     >
@@ -34,6 +36,7 @@ const LearningJourneySection = ({ imageSrc }) => {
         alignItems="center"
         justifyContent="right"
         spacing={4}
+        // rowSpacing={8}
       >
         {/* Left column — Image */}
         <Grid item xs={12} md={6} mt={-5} sx={{ textAlign: "center" }}>

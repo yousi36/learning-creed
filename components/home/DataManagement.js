@@ -1,4 +1,5 @@
 "use client";
+import { HideImage } from "@mui/icons-material";
 import { Box, Container, Typography, Button, Grid, Avatar, Paper } from "@mui/material";
 import Image from "next/image";
 import NextLink from "next/link";
@@ -12,9 +13,10 @@ export default function DataManagementSection() {
       sx={{
         bgcolor: "#042A2B",
         color: "white",
-        py: { xs: 8, md: 12 },
+        py: { xs: 0, md: 12 },
         borderRadius: "40px",
-        height:"130vh",
+        height:"auto",
+        mb:{xs:3}
       }}
     >
       <Container>
@@ -81,7 +83,7 @@ export default function DataManagementSection() {
         </Grid>
 
         {/* ===================== SECTION 2 ===================== */}
-        <Grid container rowSpacing={0} alignItems="start" mb={-50} sx={{width:"75vw",height:"100vh"}} >
+        <Grid container rowSpacing={0} alignItems="start" mb={-50} sx={{width:"100%",height:"auto"}} >
           {/* Left Column — two stacked cards */}
           <Grid item xs={12} md={6}>
             <Grid container direction="column" spacing={4}>
@@ -179,7 +181,7 @@ export default function DataManagementSection() {
               <Image
                 src="/technology.svg" // replace with your image
                 alt="Data Analytics Visualization"
-                sx={{border:"1px solid black"}}
+                sx={{xs:{display:HideImage}}}
                 fill
                 style={{
                   objectFit: "cover",
